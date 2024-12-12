@@ -93,6 +93,8 @@ def send_http_response(
 
     # If a body is present, set the Content-Length header
     if body is not None:
+        if isinstance(body, str):
+            body = body.encode("utf-8")
         headers_lower['content-length'] = str(len(body))
     else:
         # If no body, Content-Length should be 0 for certain methods
@@ -120,8 +122,4 @@ def send_http_response(
 
     # Append body if present
     if body:
-        if isinstance(body, str):
-            body_bytes = body.encode('utf-8')
-        else:
-            body_bytes = body
-        sock.sendall(body_bytes)
+        sock.sendall(body)

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='BottleneckedHTTPAPIServer',
-    version='0.1.1',
+    version='0.1.2',
     description='Convenience APIs for executing jobs on a single threaded bottlenecked environment, and creating a corresponding HTTP API server.',
     author='Louis, Chau Yu Hei',
     author_email='louis321yh@gmail.com',
