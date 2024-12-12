@@ -1,6 +1,10 @@
 # Thread Executor API
 
-A robust and thread-safe Python framework for executing computations within a single dedicated thread. This executor allows external threads to queue computation requests and retrieve results seamlessly, ensuring that all processing occurs in a controlled, single-threaded environment.
+A robust and thread-safe Python framework for executing computations within a single dedicated thread. This executor allows external threads to queue computation requests and retrieve results seamlessly, ensuring that all processing occurs in a controlled, single-threaded environment. To import, use
+
+```python
+import BottleneckedHTTPAPI.thread_executor
+```
 
 ## Table of Contents
 
